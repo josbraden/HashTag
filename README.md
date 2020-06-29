@@ -148,24 +148,19 @@ Hash: 3b1015ccf38fc2a32c18674c166fa447
 
 ### Parsing and Identifying Hashes from a File 
 
-HashTag.py -f testdir/street-hashes.10.txt -hc
+`HashTag.py -f testdir/street-hashes.10.txt -hc`
 
-Output:
 Each identified hash outputs the hash, char length, hashcat modes (if found), and possible hash types.
 
 Using the -hc/--hashcat argument we get a file for each hash type if a corresponding hashcat mode is found.  This makes the process of cracking hashes with hashcat much easier as you immediately have the mode and input file of hashes.
 
-HashTag.py -f hc-hashes -hc
-
-Output:
+`HashTag.py -f hc-hashes -hc`
 
 Again, using the -hc/--hashcat argument we get a file for each hash type if a corresponding hashcat mode is found.  This is useful if you have a large file with different types of hashes.
 
 ### Traversing Directories and Identifying Hashes
 
-HashTag.py -d ./testdir -hc
-
-Output:
+`HashTag.py -d ./testdir -hc`
 
 There are three main things included in the output:
 
