@@ -4,7 +4,7 @@ HashTag: Parse and Identify Password Hashes
 
 ## About
 
-Version 0.41
+This fork is updated to work with python3 and has the documentation included in this file. All credit for the original script goes to Smeege! Below is the README and documentation from the original project.
 
 Written by Smeege (SmeegeSec@gmail.com) on 11/05/2013
 
