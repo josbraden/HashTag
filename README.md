@@ -146,7 +146,7 @@ Hash: 3b1015ccf38fc2a32c18674c166fa447
 [*] 12 x md5($pass)
 ```
 
-### Parsing and Identifying Hashes from a File 
+### Parsing and Identifying Hashes from a File
 
 `HashTag.py -f testdir/street-hashes.10.txt -hc`
 

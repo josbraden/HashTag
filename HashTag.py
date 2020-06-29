@@ -268,7 +268,7 @@ if args.singleHash:
                     hcFound = True
                     break
             if hcFound == False:
-                print('[*] {0}'.format(value))       
+                print('[*] {0}'.format(value))
     else:
         print('\nHash not found: {0}'.format(args.singleHash))
 elif args.file:
@@ -283,10 +283,10 @@ elif args.file:
     while not os.path.isfile(inputFile):
         inputFile = input("\nFile \'{0}\' not Found!\n\nHash File Path: ".format(str(inputFile)))
     openInputFile = open(inputFile, 'r')
-    
+
     if not os.path.exists('HashTag'):
         os.mkdir('HashTag')
-    if args.output: 
+    if args.output:
         while os.path.isfile(args.output) or os.path.isfile(args.output + '.txt'):
             args.output = input("\nOutput file already exists!\n\nOutput Filename: ")
         outputFile = open(args.output, 'w')
@@ -295,7 +295,7 @@ elif args.file:
 
     for line in openInputFile.readlines():
         identifyHash(line.strip())
-    
+
     if hashDict:
         for k, v in hashDict.items():
             for mode, num in hashcatDict.items():
@@ -304,7 +304,7 @@ elif args.file:
                     foundModes.append(num)
                 else:
                     hashcatMode = ''
-                    
+
             if v:
                 hashCount += 1
                 foundModes.sort(key=int)
@@ -430,4 +430,3 @@ elif args.directory:
                 print('{0}/{1} hashes have been identified and written.'.format(notifyCount,validHashCount))
 
     print('\n{0} hashes have been identified and written to separate files based on hash type.\nA full list has been written to file {1}'.format(notifyCount, outputFile.name))
-    
