@@ -1,0 +1,270 @@
+Hash,Hashcat Mode,Character Length,Character Set,Notes,Example
+CRC-16,,4,"hexadecimal (0-9, a-f, A-F)",,24ca
+CRC-16-CCITT,,4,"hexadecimal (0-9, a-f, A-F)",,90ed
+FCS-16,,4,"hexadecimal (0-9, a-f, A-F)",,e351
+ELF-32,,8,"hexadecimal (0-9, a-f, A-F)",,05678ae8
+FCS-32,,8,"hexadecimal (0-9, a-f, A-F)",,11cd82ed
+Fletcher-32,,8,"hexadecimal (0-9, a-f, A-F)",,a4013807
+FNV-32,,8,"hexadecimal (0-9, a-f, A-F)",,043ef075
+Adler-32,,8,"hexadecimal (0-9, a-f, A-F)",,5403910e
+CRC-32,,8,"hexadecimal (0-9, a-f, A-F)",,9abfd710
+CRC-32B,,8,"hexadecimal (0-9, a-f, A-F)",,8324b4cc
+GHash-32-3,,8,"hexadecimal (0-9, a-f, A-F)",,1a55c7c3
+GHash-32-5,,8,"hexadecimal (0-9, a-f, A-F)",,1408f613
+Blowfish(Eggdrop),,13,"alphanumeric (0-9, a-z, A-Z), '/', '.'",Starts with +,+E0CJq1BGmDn/
+"descrypt, DES(Unix), Traditional DES",1500,13,"alphanumeric (0-9, a-z, A-Z), '/', '.'",,sa3tHJ3/KuYvI
+CRC-64,,16,"hexadecimal (0-9, a-f, A-F)",,3461b5f4e1840c46
+"substr(md5($pass),0,16)",,16,"hexadecimal (0-9, a-f, A-F)",,e2fc714c4727ee93
+"substr(md5($pass),16,16)",,16,"hexadecimal (0-9, a-f, A-F)",,95f324cd2e7f331f
+"substr(md5($pass),8,16)",,16,"hexadecimal (0-9, a-f, A-F)",,4727ee9395f324cd
+Cisco-PIX MD5,2400,16,"alphanumeric (0-9, a-z, A-Z), '/', '.'",,Itn9sO/yhumXJ7Jv
+"MySQL, MySQL323",200,16,"hexadecimal (0-9, a-f, A-F)",,2f18d4d923ccae07
+SAPB,,16,"hexadecimal (0-9, a-f, A-F)",,4c4b489b3d3e3ee5
+Half MD5,5100,16,"hexadecimal (0-9, a-f, A-F)",,8743b52063cd8409
+"substr(md5($pass),12,20)",,20,"hexadecimal (0-9, a-f, A-F)",,ee9395f324cd2e7f331f
+CRC-96(ZIP),,24,"hexadecimal (0-9, a-f, A-F)",,45b9d237daacd099c58a0384
+LM,3000,32,"hexadecimal (0-9, a-f, A-F)",,f40722f25bd1cf99a74f3289190ea32a
+Skein-256(128),,32,"hexadecimal (0-9, a-f, A-F)",,8a33fdcc414954540140569b9ca04969
+Skein-512(128),,32,"hexadecimal (0-9, a-f, A-F)",,e88eba6045f6a00672c398e2e2ce4959
+strrev(md5($pass)),,32,"hexadecimal (0-9, a-f, A-F)",,f133f7e2dc423f5939ee7274c417cf2e
+strrev(md5(strrev(md5($pass)))),,32,"hexadecimal (0-9, a-f, A-F)",,4cb845d113f9c628c3a97551c17d1c96
+10 x md5($pass),,32,"hexadecimal (0-9, a-f, A-F)",,1f16a6c017f12c1539c4947e234de78a
+11 x md5($pass),,32,"hexadecimal (0-9, a-f, A-F)",,02a161a8fb9666ad1de7029668df86c1
+12 x md5($pass),,32,"hexadecimal (0-9, a-f, A-F)",,b9d10f268fdc769283fb585b34c93901
+6 x md5($pass),,32,"hexadecimal (0-9, a-f, A-F)",,0f62265227df1b6d6deec36ab4bc5e76
+7 x md5($pass),,32,"hexadecimal (0-9, a-f, A-F)",,670df58df5a2ec63b0a33e054418105a
+8 x md5($pass),,32,"hexadecimal (0-9, a-f, A-F)",,6a0d8f756dfa9c1cd69fed28423ec8ca
+9 x md5($pass),,32,"hexadecimal (0-9, a-f, A-F)",,628f7643f52b6d6c34accad8a8dc2867
+Haval-128,,32,"hexadecimal (0-9, a-f, A-F)",,cc9d382aa8baab1a9269884f006671d0
+Haval-128(HMAC),,32,"hexadecimal (0-9, a-f, A-F)",,77c1d83eb149d7a2de14dc1b395230b6
+MD2,,32,"hexadecimal (0-9, a-f, A-F)",,9dc7dd5f9b5f681a133e64c0089330e7
+MD2(HMAC),,32,"hexadecimal (0-9, a-f, A-F)",,51bef5d2db7bdb6fe8e43fc9c9651a57
+MD4,900,32,"hexadecimal (0-9, a-f, A-F)",,f15abd57801840f3348ddccafb677f6a
+MD4(HMAC),,32,"hexadecimal (0-9, a-f, A-F)",,81b55496d2a7fde99eb1d34ebb3bcf7e
+MD5,0,32,"hexadecimal (0-9, a-f, A-F)",,dc647eb65e6711e155375218212b3964
+md5($pass.$salt),10,32,"hexadecimal (0-9, a-f, A-F)",,2d15a1b3b17dcf285db5eebfbf6047c2
+md5($pass.$salt.$pass),,32,"hexadecimal (0-9, a-f, A-F)",,94da16867362e6ab37519eb9aad3d784
+md5($pass.md5($pass)),,32,"hexadecimal (0-9, a-f, A-F)",,d69d8ffc69e7aaa51db8cfe286483388
+md5($salt.$pass),20,32,"hexadecimal (0-9, a-f, A-F)",,67a1e09bb1f83f5007dc119c14d663aa
+md5($salt.$pass.$username),,32,"hexadecimal (0-9, a-f, A-F)",,6a0df7f5a61df888724d57241a86cace
+md5($salt.'-'.md5($pass)),,32,"hexadecimal (0-9, a-f, A-F)",,18c548b21931b81ab554856ba457cdee
+md5($salt.md5($pass).$salt),,32,"hexadecimal (0-9, a-f, A-F)",,7d32606e406fd16162f86568ff32a829
+md5($salt.MD5($pass).$username),,32,"hexadecimal (0-9, a-f, A-F)",,7578e6df3de943738805f92b64e9f74d
+md5($salt.md5(md5($pass).$salt)),,32,"hexadecimal (0-9, a-f, A-F)",,7dc3021a5b97a2c8ee6ec932f51a2257
+md5($username.LF.$pass),,32,"hexadecimal (0-9, a-f, A-F)",,c43e53248d1fed3b35dc84a5bf6849c4
+md5($username.md5($pass).$salt),,32,"hexadecimal (0-9, a-f, A-F)",,a120666360142feff6f0941de157a9e5
+md5(1.$pass.$salt),,32,"hexadecimal (0-9, a-f, A-F)",,83648b90f2ee2968ddcec4bab445f7a8
+md5(3 x strtoupper(md5($pass))) ,,32,"hexadecimal (0-9, a-f, A-F)",,2d291961b0b7ce3a8fa1ddb133e5fadf
+MD5(HMAC(Wordpress)),,32,"hexadecimal (0-9, a-f, A-F)",,257dddfc24899d69c35a8c695bd179b5
+MD5(HMAC),,32,"hexadecimal (0-9, a-f, A-F)",,c63746bc3a09dd137b1b64c1d6bf8a02
+"md5(md5($pass)), Double MD5",2600,32,"hexadecimal (0-9, a-f, A-F)",,b8498ee29e56e711a268ae8cc461ae94
+md5(md5($pass).$pass),,32,"hexadecimal (0-9, a-f, A-F)",,b48552e03b110a985830aae376bbb215
+md5(md5($pass).md5($pass)),,32,"hexadecimal (0-9, a-f, A-F)",,3ddeb742da0ee879eefe9331b3a02605
+md5(md5($salt).md5($pass)),,32,"hexadecimal (0-9, a-f, A-F)",,9d521b8284ff9edc876b3f6e96941934
+md5(md5($username.$pass).$salt),,32,"hexadecimal (0-9, a-f, A-F)",,41a47072068c76bc83c47b63673bde71
+md5(md5(base64_encode($pass))),,32,"hexadecimal (0-9, a-f, A-F)",,74be16979710d4c4e7c6647856088456
+md5(md5(md5($pass))),3500,32,"hexadecimal (0-9, a-f, A-F)",,9882d0778518b095917eb589f6998441
+md5(md5(md5(md5($pass)))),,32,"hexadecimal (0-9, a-f, A-F)",,e5e79fac774f77000a0e5c1e6404ac1b
+md5(md5(md5(md5(md5($pass))))),,32,"hexadecimal (0-9, a-f, A-F)",,fe9ca65247fdfa34ae6127b9cd975017
+md5(sha1($pass)),4400,32,"hexadecimal (0-9, a-f, A-F)",,288496df99b33f8f75a7ce4837d1b480
+md5(sha1(base64_encode($pass))),,32,"hexadecimal (0-9, a-f, A-F)",,0144712dd81be0c3d9724f5e56ce6685
+md5(sha1(md5($pass))),,32,"hexadecimal (0-9, a-f, A-F)",,3d097b207c7edef8d765e346ee2454cb
+md5(sha1(md5($pass)).sha1($pass)),,32,"hexadecimal (0-9, a-f, A-F)",,5c1474e26e2ccfe4c367e1c25fd895d4
+md5(sha1(md5(sha1($pass)))),,32,"hexadecimal (0-9, a-f, A-F)",,492ad3ddc341be639b80828588fd532e
+md5(strrev($pass)),,32,"hexadecimal (0-9, a-f, A-F)",,d41d8cd98f00b204e9800998ecf8427e
+md5(strrev(md5($pass))),,32,"hexadecimal (0-9, a-f, A-F)",,0fa279018c5ba89b5e2b0170222984d3
+md5(strtoupper(md5($pass))),4300,32,"hexadecimal (0-9, a-f, A-F)",,b8c385461bb9f9d733d3af832cf60b27
+md5(strtoupper(md5(strtoupper(md5(strtoupper(md5($pass))))))),,32,"hexadecimal (0-9, a-f, A-F)",,9e437346eba2cb75ff37234ec8ee35d0
+MD5(ZipMonster),,32,"hexadecimal (0-9, a-f, A-F)",,1c4edec5ed8932dc0b7fd23995bec3f1
+NTLM,1000,32,"hexadecimal (0-9, a-f, A-F)",,a4f49c406510bdcab6824ee7c30fd852
+RAdmin v2.x,,32,"hexadecimal (0-9, a-f, A-F)",,72e0bed54f5ca36712dc0bc5c772fd8c
+RipeMD-128,,32,"hexadecimal (0-9, a-f, A-F)",,35c2ebff598d117b8a32909b0ed77e3a
+RipeMD-128(HMAC),,32,"hexadecimal (0-9, a-f, A-F)",,36c5e46f65c6461028f2d59fe4f4953d
+Snefru-128,,32,"hexadecimal (0-9, a-f, A-F)",,09320947c507ff1874044214ab8bb06f
+Snefru-128(HMAC),,32,"hexadecimal (0-9, a-f, A-F)",,826e090bb2a26aa97e33a912cb3f07c2
+Tiger-128,,32,"hexadecimal (0-9, a-f, A-F)",,78db95bcce175ab632095962774965d1
+Tiger-128(HMAC),,32,"hexadecimal (0-9, a-f, A-F)",,30cc88fddbccbb73b80cc59cc0a7f1e3
+"nsldap, SHA-1(Base64), Netscape LDAP SHA",101,33,,Starts with {SHA},{SHA}uJ6qx+YUFzQbcQtyd2gpTQ5qJ3s=
+"md5crypt, MD5(Unix), FreeBSD MD5, Cisco-IOS MD5",500,34,"alphanumeric (0-9, a-z, A-Z), '/', '.'",$1$[8 char from salt]$[22 char],$1$Fftr/oS7$occiCUliFT28DRFfTCN5N0
+MD5(phpBB3),400,34,"alphanumeric (0-9, a-z, A-Z), '/', '.'",Starts with $H$.,$H$9w17RO4dguqrhQvh9Dv1G/Ju7SeeOs1
+"phpass, MD5(Wordpress)",400,34,"alphanumeric (0-9, a-z, A-Z), '/', '.'",Starts with $P$.,$P$B.04iNOK8YcBl325haguHw//Selu6i1
+Lineage II C4,,34,"hexadecimal (0-9, a-f, A-F)",Starts with 0x,0xb509ddec516074e8dd446262af351313
+"osCommerce, xt:Commerce",21,35,,[32 char hash]:[2 char salt],374996a5e8a5e57fd97d893f7df79824:36
+"md5(md5($pass).$salt), vBulletin < v3.8.5",2611,36,"hexadecimal (0-9, a-f, A-F)",[32 char hash]:[Salt],16780ba78d2d5f02f3202901c1b6d975:568
+"md5apr1, MD5(APR), Apache MD5",1600,37,"alphanumeric (0-9, a-z, A-Z), '/', '.'",$apr1$[8 char from salt]$[22 char],$apr1$qq9Eiheg$8hFnce5o4laFkRCOe8KiE.
+AIX {smd5},6300,37,,Starts with {smd5},{smd5}a5/yTL/u$VfvgyHx1xUlXZYBocQpQY0
+md5($salt.$pass.$salt),3810,37,,,2e45c4b99396c6cb2db8bda0d3df669f:1234
+md5($salt.md5($pass)),3710,37,,,95248989ec91f6d0439dbde2bd0140be:1234
+md5($salt.md5($pass.$salt)),4110,37,,,b4cb5c551a30f6c25d648560408df68a:1234
+md5($salt.md5($salt.$pass)),4010,37,,,30d0cf4a5d7ed831084c5b8b0ba75b46:1234
+md5($username.0.$pass),4210,37,,,09ea048c345ad336ebe38ae5b6c4de24:1234
+md5(md5($pass).md5($salt)),3910,37,,,250920b3a5e31318806a032a4674df7e:1234
+md5(md5($salt).$pass),3610,37,,,7b57255a15958ef898543ea6cc3313bc:1234
+HMAC-MD5 (key = $pass),50,37,,,fc741db0a2968c39d9c2a5cc75b05370:1234
+HMAC-MD5 (key = $salt),60,37,,,bfd280436f45fa38eaacac3b00518f29:1234
+md5($pass.md5($salt)),3720,37,,,10ce488714fdbde9453670e0e4cbe99c:1234
+WebEdition CMS,3721,37,,,fa01af9f0de5f377ae8befb03865178e:5678
+"IPB2+, MyBB1.2+",2811,38,,,8d2129083ef35f4b365d5d87487e1207:47204
+md5(unicode($pass).$salt),30,39,,32 char hash or [32 char hash]:Salt,b31d032cfdcf47a399990a71e43c5d2a:144816
+sha1($salt.$pass.$salt),,40,,40 char hash or [40 char hash]:Salt,aab04277ffba1dee47288b05fa58d25e49a1935e
+sha1(md5($pass.$salt)),,40,,40 char hash or [40 char hash]:Salt,716bd825be9a16610f6c35545d7eede741c45bfe
+sha1(md5($pass).$userdate.$salt),,40,,40 char hash or Date:[40 char hash]:Salt,2e5a332995eaaeffbcc3d48dce07ec9d388aea84
+sha1($pass.$username.$salt),,40,,40 char hash or User:[40 char hash]:Salt,1e012cb9aae1fdb4ad0fc3bac064670fc6f24b9c
+HAS-160,,40,"hexadecimal (0-9, a-f, A-F)",,6746df56b6210ed660ab01b8d8886a8237389bd5
+sha1(md5($pass).$pass),,40,"hexadecimal (0-9, a-f, A-F)",,093d031450f591a362b11ca1ddb15d432bb73512
+sha1(md5(sha1($pass))),,40,"hexadecimal (0-9, a-f, A-F)",,2b0135c6fdd6b9149f2f8cecc799243a85b95aa5
+Skein-256(160),,40,"hexadecimal (0-9, a-f, A-F)",,46bf45375ab35ca2b35183da91d9cd847542dddf
+Skein-512(160),,40,"hexadecimal (0-9, a-f, A-F)",,4721295b14d704a452a56e948e52ca4ea296ca75
+xsha1(strtolower($pass)),,40,"hexadecimal (0-9, a-f, A-F)",,1409f69363ad1ffc2311de6907d17c6426bceaa0
+Haval-160,,40,"hexadecimal (0-9, a-f, A-F)",,b842c85a8787c5607b66d1f30c271be333ac7f24
+Haval-160(HMAC),,40,"hexadecimal (0-9, a-f, A-F)",,3a8b861fc108ace54ded437d1d097ca27afd2ff3
+RipeMD160,6000,40,"hexadecimal (0-9, a-f, A-F)",,012cb9b334ec1aeb71a9c8ce85586082467f7eb6
+RipeMD-160(HMAC),,40,"hexadecimal (0-9, a-f, A-F)",,3a9a1d441e7b3ec02240dcb72f376b122b96e097
+SAPG,,40,"hexadecimal (0-9, a-f, A-F)",,4f972ce5da680c70079e7366c126be1a63ba1862
+SHA1,100,40,"hexadecimal (0-9, a-f, A-F)",,8be3c943b1609fffbfc51aad666d0a04adf83c9d
+sha1($salt.$username.$pass.$salt),,40,"hexadecimal (0-9, a-f, A-F)",,dd95a50e49a26af4d9901f2b10b630caa3b244ad
+sha1($salt.md5($pass)),,40,"hexadecimal (0-9, a-f, A-F)",,81d9dfc34abaea0cf8544331b7a98ab2bf34d56b
+sha1($salt.md5($pass).$salt),,40,"hexadecimal (0-9, a-f, A-F)",,62f172e7a8efaffdb393d60bc46eeffa977d0e3d
+sha1($salt.sha1($pass)),,40,"hexadecimal (0-9, a-f, A-F)",,e73283794d4c341da68c0ba9d794f18cfc45847f
+sha1($salt.sha1($salt.sha1($pass))),,40,"hexadecimal (0-9, a-f, A-F)",,b9453e21dd222bba0e292ab1cc252a51a09409d1
+sha1($username.$pass),,40,"hexadecimal (0-9, a-f, A-F)",,d1d5959127f0b7c1bd316624bde074448254e007
+sha1($username.$pass.$salt),,40,"hexadecimal (0-9, a-f, A-F)",,d1cd71acb5adc748d9a8afee7e119c058896a0e3
+SHA-1(HMAC),,40,"hexadecimal (0-9, a-f, A-F)",,6171130541f65625b316cda76058324128eaf798
+SHA-1(MaNGOS),,40,"hexadecimal (0-9, a-f, A-F)",,979366c228bbbb10d429ac18c074b3c69d54ad16
+SHA-1(MaNGOS2),,40,"hexadecimal (0-9, a-f, A-F)",,c7974c4e743e4ba7c94852b55e88af5e34f45e05
+sha1(md5($pass)),4700,40,"hexadecimal (0-9, a-f, A-F)",,92d85978d884eb1d99a51652b1139c8279fa8663
+sha1(md5($pass).$salt),,40,"hexadecimal (0-9, a-f, A-F)",,31df5bd7282353e53002355c389fa3b2eb39590f
+sha1(md5(sha1(md5($pass)))),,40,"hexadecimal (0-9, a-f, A-F)",,9d42958ddf703650b99823a1289ad5f04ac8eac7
+sha1(sha1($pass)),4500,40,"hexadecimal (0-9, a-f, A-F)",,3db9184f5da4e463832b086211af8d2314919951
+sha1(sha1($pass).$salt),,40,"hexadecimal (0-9, a-f, A-F)",,8ab1d02c99cc852e9de3f82d96435d674f46f899
+"sha1(sha1($pass).substr($pass,0,3))",,40,"hexadecimal (0-9, a-f, A-F)",,04882d92e8e2d5ee7e07ca72dcff393be5c7e482
+sha1(sha1($salt.$pass)),,40,"hexadecimal (0-9, a-f, A-F)",,958bf562d4463593e8222433ea3a97871243c2f4
+sha1(sha1(sha1($pass))),4600,40,"hexadecimal (0-9, a-f, A-F)",,dc57f246485e62d99a5110afc9264b4ccbfcf3cc
+Tiger-160,,40,"hexadecimal (0-9, a-f, A-F)",,78db95bcce175ab632095962774965d1151e1f17
+Tiger-160(HMAC),,40,"hexadecimal (0-9, a-f, A-F)",,1480be8e1c69a8b38fe223766f394c4c97130dd7
+sha1(LinkedIn),190,40,"hexadecimal (0-9, a-f, A-F)",,b89eaac7e61417341b710b727768294d0e6a277b
+MySQL4.1/MySQL5,300,41,"hexadecimal (0-9, A-F)",Starts with asterisk. All uppercase.,*FBA7C2D27C9D05F3FD4C469A1BBAF557114E5594
+Cisco-IOS SHA256,5700,43,"alphanumeric (0-9, a-z, A-Z)",,2btjjy78REtmYkkW0csHUbJZOstRXoWdX1mGrmmfeHI
+"Domain Cached Credentials2, mscash2",2100,41,,[hash]:[Username],fe778f07253e423f2090105b08a6c69b:username
+"sha1(strtolower($username).$pass),  SMF >= v1.1 ",121,45,"hexadecimal (0-9, a-f, A-F)",[Username]:[40 char hash],User:903d4eb93db5b8e39ca0f5e2e4450e33ff950864
+sha1($pass.$salt),110,45,"hexadecimal (0-9, a-f, A-F)",,2fc5a684737ce1bf7b3b239df432416e0dd07357:2014
+HMAC-SHA1 (key = $pass),150,45,,,c898896f3f70f61bc3fb19bef222aa860e5ea717:1234
+HMAC-SHA1 (key = $salt),160,45,,,d89c92b4400b15c39e462a8caa939ab40c3aeeea:1234
+"nsldaps, SSHA-1(Base64), Netscape LDAP SSHA",111,46,,Starts with {SSHA},{SSHA}AZKja92fbuuB9SpRlHqaoXxbTc43Mzc2MDM1Ng==
+sha1(unicode($pass).$salt),130,47,,[40 char hash]:[Salt],c57f6ac1b71f45a07dbd91a59fa47c23abcd87c2:631225
+md5($salt.unicode($pass)),40,47,,,d63d0e21fdc05f618d55ef306c54af82:13288442151473
+Fortigate (FortiOS),7000,47,"alphanumeric (0-9, a-z, A-Z)",,AK1AAECAwQFBgcICRARNGqgeC3is8gv2xWWRony9NJnDgEA
+Haval-192,,48,"hexadecimal (0-9, a-f, A-F)",,3e498ff29c77e0109f68da80e42542ac1937df4b87361763
+Haval-192(HMAC),,48,"hexadecimal (0-9, a-f, A-F)",,a640b91044d2ed1822f4ec4190f46792dcf43c7f212290d3
+SHA-1(Oracle),112,48,"hexadecimal (0-9, a-f, A-F)",,49f8edc3eb21c8ef5d93ba9dfc2e27c34c23bf0653616c74
+Tiger-192,,48,"hexadecimal (0-9, a-f, A-F)",,78db95bcce175ab632095962774965d1151e1f1727c63f3d
+Tiger-192(HMAC),,48,"hexadecimal (0-9, a-f, A-F)",,64989d51abca52b9ff67683002132f581b6882823e290212
+"OSX v10.4, v10.5, v10.6",122,48,"hexadecimal (0-9, a-f, A-F)",,1430823483d07626ef8be3fda2ff056d0dfd818dbfe47683
+sha1($salt.$pass),120,51,"hexadecimal (0-9, a-f, A-F)",,cac35ec206d868b7d7cb0b55f31d9425b075082b:5363620024
+MD5(Palshop),,51,"hexadecimal (0-9, a-f, A-F)",,320a34b6add29edcd04eb724b756b729780018c3a10a74263d9
+Palshop,,51,"hexadecimal (0-9, a-f, A-F)",,c48330f314a411804ec840f131fc44df6445e88075340d8c3a5
+sha1($salt.unicode($pass)),140,54,,[40 char hash]:[Salt],5db61e4cd8776c7969cfd62456da639a4c87683a:8763434884872
+AIX {ssha1},6700,54,,Starts with {ssha1},{ssha1}06$bJbkFGJAB30L2e23$dCESGOsP7jaIIAJ1QAcmaGeG.kr
+MSSQL(2005),132,54,,Starts with 0x0100[Salt],0x0100saltfc9def6a4f847576458241bf11c2a906140b1db2
+Lastpass,6800,54,,,265f92cc8dac35bf09694ff921228ef8:500:lp@trash-mail.com
+MD5(Sun),3300,55,,Starts with $md5$,$md5$rounds=904$iPPKEBnEkp3JV8uX$0L6m7rOFTVFn.SGqo2M9W1
+Keccak-224,,56,"hexadecimal (0-9, a-f, A-F)",,be2ec6c1cce305a0ba88300bfcad0ab0b9f480f964be34b2cd253199
+Skein-256(224),,56,"hexadecimal (0-9, a-f, A-F)",,9ac0082bb1b2f3004fffa45300a74f2855f2308426fd5e9f0e4c39ec
+Skein-512(224),,56,"hexadecimal (0-9, a-f, A-F)",,bf3e58d8cb9a2dd31215fb3b825896ae8d22514747cda7796f3e8c25
+Haval-224,,56,"hexadecimal (0-9, a-f, A-F)",,9d1f99b4c9a1bec268d68f7ad8fce18187c0ebb4cd25ddcc6e36b3cc
+Haval-224(HMAC),,56,"hexadecimal (0-9, a-f, A-F)",,8e43c57c0d975907d1dbdcdf32bae81848f40506e383a3ebb4219166
+SHA-224,,56,"hexadecimal (0-9, a-f, A-F)",,a1308b7983fef7def9ffd06bed7ff767fa4216baf9d9d911af1e7e2e
+SHA-224(HMAC),,56,"hexadecimal (0-9, a-f, A-F)",,20043a6b0bc7e4f0dfaa4af4229944bde575a56e11df0004d96b1902
+Samsung Android Password/PIN,5800,57,,,0223b799d526b596fe4ba5628b9e65068227e68e:f6d45822728ddb2c
+"bcrypt, Blowfish(OpenBSD)",3200,60,"alphanumeric (0-9, a-z, A-Z), '/', '.'","Starts with $2$, $2a$, $2y$",$2a$12$VqmDAGUb4lsmcXuphUGTnu1Sn27DJUBXmUUChMxQf7pF3hBFQfrGG
+Oracle 11g,112,62,,Starts with S:,S:023665D51D4644A9B28414F8C9158757637FA0AFD3C7DD309A76D6F2177E
+vBulletin > v3.8.5,2711,63,,,bf366348c53ddcfbd16e63edfdd1eee6:181264250056774603641874043270
+sha256(md5($pass.$salt)),,64,,64 char hash or [64 char hash]:Salt,ded98e5b67b6aeca827dfe6a0cbc48e950e6b1845df264e1158707bb35ff5351
+sha256(md5($salt.$pass)),,64,,64 char hash or [64 char hash]:Salt,29ec100e5e96b85b9207bff91ef1b8b38afae016915bc2bdc97478d6eb9d04ae
+SHA-256(RuneScape),,64,,64 char hash or [64 char hash]:Salt,a3e7ca2aa331457481f84f174d1cc101757e4784e214f9f5cccf63cc007582a9
+sha256(sha256($pass).$salt),,64,,64 char hash or [64 char hash]:Salt,608020750f10174dbcec5a593bd648c738fa2e65fe8f4e08821f943829fe3548
+Haval-256(HMAC),,64,,64 char hash or [64 char hash]:Salt,bb89a583bc35175a97e1e5c275c32dd504779891267fcc728b17fdaf270e38d7
+RipeMD-256(HMAC),,64,,64 char hash or [64 char hash]:Salt,897eb6985b652016ab0784745264c675e8e664a81d1c2707930db5ef505072f6
+sha256($pass.$salt),1410,64,,64 char hash or [64 char hash]:Salt,efe6de899fb469a1da59c5ddec4cbe07f1740103abaa5edd5b28243752a9eb3a
+sha256($salt.$pass),1420,64,,64 char hash or [64 char hash]:Salt,7c0673382e8590bd52fddfcc0213f4c0dad75f2fb68af0daa199923e458474f6
+SHA-256(HMAC),,64,,64 char hash or [64 char hash]:Salt,3bc4bec3bca3720e3e3db47edb8015c575fe0b4706815e507f1d143890b40965
+Snefru-256(HMAC),,64,,64 char hash or [64 char hash]:Salt,b80832a486e84ff0cbc2956eeb671e3ef51d41543c031802c1657bf01d7507bb
+Keccak-256,,64,"hexadecimal (0-9, a-f, A-F)",,48bed44d1bcd124a28c27f343a817e5f5243190d3c52bf347daf876de1dbbf77
+sha256(md5($pass).$pass)),,64,"hexadecimal (0-9, a-f, A-F)",,74c5598646af30d97dd73ad27e5a78af881140ea6e151452affd7cac699408d8
+Skein-256,,64,"hexadecimal (0-9, a-f, A-F)",,1f90960e7b9fff4d90928854167091e2c92c8800a44941c668b9d034e0ab8043
+Skein-512(256),,64,"hexadecimal (0-9, a-f, A-F)",,2fee3ce07ffef3d2f78a6f7b38a8f294b70e902f9d0f8f514e34d48d93b55f31
+Ventrilo,,64,"hexadecimal (0-9, a-f, A-F)",,1621a36cbd1ce49c5810c9b69468cc9c8eb16089cd7ed3493143f92c2d8064fe
+WPA-PSK PMK,,64,"hexadecimal (0-9, a-f, A-F)",,8f4da464e8af6d894cf4b7cb815b0966c07f1feb8a128470d14258ad34b04a29
+GOST R 34.11-94,6900,64,"hexadecimal (0-9, a-f, A-F)",,243674170a09e1e5fc9aafae4ba426841efc9ad55a5c013d1277f204e3ecfa04
+Haval-256,,64,"hexadecimal (0-9, a-f, A-F)",,269dd4fca53c68c42a17f2cb9961e210c2f865028236b91da32e4b3d8b866150
+RipeMD-256,,64,"hexadecimal (0-9, a-f, A-F)",,899f9b6c9a967328bf50ba1cd02cfdfbef5ffe37510dcd825bf057cbf9462a44
+SHA256,1400,64,"hexadecimal (0-9, a-f, A-F)",,e7cf3ef4f17c3999a94f2c6f612e8a888e5b1026878e4e19398b23bd38ec221a
+sha256(md5($pass)),,64,"hexadecimal (0-9, a-f, A-F)",,e765e47fd32132c38dd4826f75556fc0e9038d775bf705f76c147b352362695b
+sha256(sha1($pass)),,64,"hexadecimal (0-9, a-f, A-F)",,7c9c8a46c869b9a811bb1e6f9ff678998621a74443c2b49bb74672581caaf03a
+Snefru-256,,64,"hexadecimal (0-9, a-f, A-F)",,e93bdb01bd8f29328e8141e65ec6eab30099d3e667f41f849320b60e132ce586
+HMAC-SHA256 (key = $salt),1460,64,"hexadecimal (0-9, a-f, A-F)",,8efbef4cec28f228fa948daaf4893ac3638fbae81358ff9020be1d7a9a509fc6
+SHA-3(Keccak),5000,64,"hexadecimal (0-9, a-f, A-F)",,203f88777f18bb4ee1226627b547808f38d90d3e106262b5de9ca943b57137b6
+Joomla,11,65,,[32 char hash]:[32 char salt],19e0e8d91c722e7091ca7a6a6fb0f4fa:54718031842521651757785603028777
+EPiServer 6.x < v4,141,66,,Starts with $episerver$*0*,$episerver$*0*bEtiVGhPNlZpcUN4a3ExTg==*utkfN0EOgljbv5FoZ6+AcZD5iLk
+MD5(Chap),4800,68,,,afd09efdd6f8ca9f18ec77c5869788c3:01020304050607080910111213141516:01
+HMAC-SHA256 (key = $pass),1450,69,,,abaf88d66bf2334a4a8b207cc61a96fb46c3e38e882e6f6f886742f688b8588c:1234
+sha256(unicode($pass).$salt),1430,71,,,4cc8eb60476c33edac52b5a7548c2c50ef0f9e31ce656c6f4b213f901bc87421:890128
+AIX {ssha256},6400,72,,Starts with {ssha256},{ssha256}06$aJckFGJAB30LTe10$ohUsB7LBPlgclE3hJg9x042DLJvQyxVCX.nZZLEz.g2
+sha256($salt.unicode($pass)),1440,73,,,a4bd99e1e0aba51814e81388badb23ecc560312c4324b2018ea76393ea1caca9:12345678
+RipeMD-320,,80,,,7d582eabceaf2d297fafb156bf5081145673e84f798bcc9e509c84408c73e259d42ece29e311a452
+RipeMD-320(HMAC),,80,,,0d57d8c17af44d047694fe0dba6e0f332bc326c387b5fd08238531d63b70d443eda147617e8c49c0
+EPiServer 6.x > v4,1441,82,,Starts with $episerver$*1*,$episerver$*1*MDEyMzQ1Njc4OWFiY2RlZg==*lRjiU46qHA7S6ZE7RfKUcYhB85ofArj1j7TrCtu3u6Y
+MSSQL(2000),131,94,,Starts with 0x0100[Salt],0x0100saltfc9def6a4f847576458241bf11c2a906140b1db2fc9def6a4f847576458241bf11c2a906140b1db2
+Keccak-384,,96,"hexadecimal (0-9, a-f, A-F)",,9954ac5a81f6192ea07b91bf790cce46b3bb96805f3a3b9826855968fc28c8c6bbdfc2067593fa6277f72720aa137abb
+Skein-1024(384),,96,"hexadecimal (0-9, a-f, A-F)",,9e5c86653868f1d2a4a208eae807a031371dcaac17ce3ef74845a0602b9ac16ee52e95afc58c993161ea3223c63a486b
+Skein-512(384),,96,"hexadecimal (0-9, a-f, A-F)",,f7812ca81e535c4ed1b8cda62fad83df61eff6e97c358ed70f3b23172555c036a3c570ef0f85ae8747b0fe0281868bd7
+SHA-384,,96,"hexadecimal (0-9, a-f, A-F)",,d3a1ad34a5f0d265d8c0441d85532a95d02fcca0450646c21f1585cfc521843cd423d02f53e9205390706cc15f3a06fe
+sha384($pass.$salt),,96,"hexadecimal (0-9, a-f, A-F)",,6c0704c20e0b58d37b5cebeb90dd46c26c1175d1bd01a53237669831dcb5cc996e0c24763b9c9d30077bc4c3e345e7d6
+sha384($salt.$pass),,96,"hexadecimal (0-9, a-f, A-F)",,9a4ebc944ced14e9ffdabd9cd5ed8db37203d7bc81ea9f195f865a9dfd976ceb31da94e49404a27c72dd55ddc1b9b51e
+SHA-384(HMAC),,96,"hexadecimal (0-9, a-f, A-F)",,5bf75e38b326e922271517e6557c7b2dfa4166c583891abffe8532913cfab53bfb787ca826720c2c817f4f5a4072101f
+"SSHA-512(Base64), LDAP {SSHA512}",1711,105,,Starts with {SSHA512},{SSHA512}ALtwKGBdRgD+U0fPAy31C28RyKYx7+a8kmfksccsOeLknLHv2DBXYI7TDnTolQMBuPkWDISgZr2cHfnNPFjGZTEyNDU4OTkw
+AIX {ssha512},6500,116,,Starts with {ssha512},{ssha512}06$bJbkFGJAB30L2e23$bXiXjyH5YGIyoWWmEVwq67nCU5t7GLy9HkCzrodRCQCx3r9VvG98o7O3V0r9cVrX3LPPGuHqT5LLn0oGCuI1.. 
+Keccak-512,,128,"hexadecimal (0-9, a-f, A-F)",,228ad7d4b3c353672f34cf5cb7cf9c6736efc9a1360c36516919b907fbcc830648e27bb1521819e54735628378afdfdb4e20e9096678afec90ec2799b2c0e4d2
+Skein-1024(512),,128,"hexadecimal (0-9, a-f, A-F)",,b132215e3fd6aebcdff044cf3824eee6de27de9e994dac41a65d28279c08cbd7e69b21bef892475265d7958e2e6ef59012e9a8ec4de38e774b17bbb9fce2f94a
+Skein-512,,128,"hexadecimal (0-9, a-f, A-F)",,6a7f3568a6dfc8d74f478d787e10617787ea35557a909152c13cdc9ef3e8cce28560269748e0f2d58ea76cad67f70583e821d73220982fa5c9c68809edd43568
+SHA512,1700,128,"hexadecimal (0-9, a-f, A-F)",,e6c83b282aeb2e022844595721cc00bbda47cb24537c1779f9bb84f04039e1676e6ba8573e588da1052510e3aa0a32a9e55879ae22b0c2d62136fc0a3e85f8bb
+sha512($pass.$salt),1710,128,"hexadecimal (0-9, a-f, A-F)",,90668e67e68bbbebc8310f435ee4cd667d43c1cc7be78a882093db461e8bc2ac54da81b54ad4bdd804b838fbef6a42a0de24ed0daa578361ec75748b32bce9af
+sha512($salt.$pass),1720,128,"hexadecimal (0-9, a-f, A-F)",,ed993cc3412014a126e5afeb1b5bb1520aac6424fc68dd968a22166f2a25e2a2146123236e6b4e6eb553fa53627b4d8cef692b2af5558a7d2f0fdb45df676663
+SHA-512(HMAC),,128,"hexadecimal (0-9, a-f, A-F)",,f81e4c7ca0f916b790e71c513445a3fd45304bd57cb9a6627652f3d4f1ca58dc444e96dcda682a513e074e375303c710a5b745189005b32a7a4dccb327780023
+Whirlpool,6100,128,"hexadecimal (0-9, a-f, A-F)",,7ca8eaaaa15eaa4c038b4c47b9313e92da827c06940e69947f85bc0fbef3eb8fd254da220ad9e208b6b28f6bb9be31dd760f1fdb26112d83f87d96b416a4d258
+Whirlpool(HMAC),,128,"hexadecimal (0-9, a-f, A-F)",,154902804692d6e79a6afcc2f4e1f80219d99366cd9d173e045b811d56cac6161539fa997cf9ecdef591f5db0068841ad842e4adfda86f3d5d742357963ea179
+sha512(unicode($pass).$salt),1730,128,"hexadecimal (0-9, a-f, A-F)",,13070359002b6fbb3d28e50fba55efcf3d7cc115fe6e3f6c98bf0e3210f1c6923427a1e1a3b214c1de92c467683f6466727ba3a51684022be5cc2ffcb78457d2
+sha512($salt.unicode($pass)),1740,128,"hexadecimal (0-9, a-f, A-F)",,bae3a3358b3459c761a3ed40d34022f0609a02d90a0d7274610b16147e58ece00cd849a0bd5cf6a92ee5eb5687075b4e754324dfa70deca6993a85b2ca865bc8
+HMAC-SHA512 (key = $pass),1750,128,"hexadecimal (0-9, a-f, A-F)",,94cb9e31137913665dbea7b058e10be5f050cc356062a2c9679ed0ad6119648e7be620e9d4e1199220cd02b9efb2b1c78234fa1000c728f82bf9f14ed82c1976
+NetNTLMv1-VANILLA / NetNTLMv1+ESS,5500,130,,,u4-netntlm::kNS:338d08f8e26de93300000000000000000000000000000000:9526fb8c23a90751cdd619b6cea564742e1e4bf33006ba41:cb8086049ec4736c
+IPMI2 RAKP HMAC-SHA1,7300,130,"hexadecimal (0-9, a-f, A-F)",,b7c2d6f13a43dce2e44ad120a9cd8a13d0ca23f0414275c0bbe1070d2d1299b1c04da0f1a0f1e4e2537300263a2200000000000000000000140768617368636174
+HMAC-SHA512 (key = $salt),1760,133,,,7cce966f5503e292a51381f238d071971ad5442488f340f98e379b3aeae2f33778e3e732fcc2f7bdc04f3d460eebf6f8cb77da32df25500c09160dd3bf7d2a6b:1234
+OSX v10.7,1722,136,"hexadecimal (0-9, a-f, A-F)",,648742485c9b0acd786a233b2330197223118111b481abfa0ab8b3e8ede5f014fc7c523991c007db6882680b09962d16fd9c45568260531bdb34804a5e31c22b4cfeb32d
+MSSQL(2012),1731,142,,Starts with 0x02,0x02000102030434ea1b17802fd95ea6316bd61d2c94622ca3812793e8fb1672487b5c904a45a31b2ab4a78890d563d2fcf5663e46fe797d71550494be50cf4915d3f4d55ec375
+NetNTLMv2,5600,174,,,admin::N46iSNekpT:08ca45b7d7ea58ee:88dcbe4446168966a153a0064958dac6:5c7830315c7830310000000000000b45c67103d07d7b95acd12ffa11230e0000000052920b85f78d013c31cdb3b92f5d765c783030
+Whirlpool(Double),,177,Any char?,Any char?,kf4V/gcQEId4RdY3deM/w3X3qvEvUi/2fU5MCdsKagE2c6i9zVK8ck4jzF5tyCEDL/knHTpd6Mw7QS7fzeFhrg==|yVmGbjnDkyz0FIQVav7A7Jkv4MaRPK2E1uuJ73DlM7y6vqkF2INxLMbomCflJTDA+sr56TaySCwHgCibdit++g==
+OSX v10.8,7100,203,,Starts with $ml$,$ml$35460$93a94bd24b5de64d79a5e49fa372827e739f4d7b6975c752c9a0ff1e5cf72e05$752351df64dd2ce9dc9c64a72ad91de6581a15c19176266b44d98919dfa81f0f96cbcb20a1ffb400718c20382030f637892f776627d34e021bad4f81b7de8222
+Skein-1024,,256,"hexadecimal (0-9, a-f, A-F)",,62b6c4521a646a099850699ea262d3f5a73290959fd34734b4015097eb7b2700e964236f0b213193f0a15b82eb08a0bf330d60421fc81e9a9383df72172ce9787fde19ea0813a566cb62c55d042d0d9a0f86d87ae40de85a9b247225968aea29ba878cf0c30c44a181f3ef8e47975da80ca21f244b81504ebfb446924dcd7061
+GRUB 2,7200,282,,Starts with grub,grub.pbkdf2.sha512.10000.7d391ef48645f626b427b1fae06a7219b5b54f4f02b2621f86b5e36e83ae492bd1db60871e45bc07925cecb46ff8ba3db31c723c0c6acbd4f06f60c5b246ecbf.26d59c52b50df90d043f070bd9cbcd92a74424da42b3666fdeb08f1a54b8f1d2f4f56cf436f9382419c26798dc2c209a86003982b1e5a9fcef905f4dfaa4c524
+"Oracle 7-10g, DES(Oracle)",3100,16+,"hexadecimal (0-9, a-f, A-F)",16 char hash or Username:[16 char hash],01E7789E37CB2C95
+md4($pass.$salt),910,32+,"hexadecimal (0-9, a-f, A-F)",32 char hash or [32 char hash]:Salt,5f36397765d326ee2370333af98d6f66
+md4($salt.$pass),,32+,"hexadecimal (0-9, a-f, A-F)",32 char hash or [32 char hash]:Salt,72619710c365cbe3d068681fa3e2fd5c
+DCC2,,32+,"hexadecimal (0-9, a-f, A-F)",32 char hash or Username:[32 char hash],be9327af42397eb7e897e1c44f3fc1b9
+SHA-1(Django),800,46+,"hexadecimal (0-9, a-f, A-F)",Starts with sha1$[Salt],sha1$Salt$9ecad57e44aa0adde549eeced151102f1df9d711
+SHA-512(Drupal),,47-63,"alphanumeric (0-9, a-z, A-Z), '/', '.'",Starts with $S$,$S$C12345678DZ5MRSrL1r2lsmcx47tViKr9s/gaIJN5ruRSS.X6BRk
+"sha256crypt, SHA256(Unix)",7400,47-91,"alphanumeric (0-9, a-z, A-Z), '/', '.'",Starts with $5$,$5$12345678$.HyoD5rKr323EFaYphs1fdfWCCzEk7P6k0DJaT/MJg2
+"sha512crypt, SHA512(Unix)",1800,90-134,"alphanumeric (0-9, a-z, A-Z), '/', '.'",Starts with $6$,$6$12345678$QVQOdGAbBeNuQxcdIGKZUFvrf5FWFHOxEqGdQYM6Wzv6h05r45/gcV9xuGJH763.lCwMenMyTVmmXx2j6AZTB0
+SHA-256(AuthMe),,,,$SHA$[Salt]$Hash,$SHA$0123456789abcdef$a94fc6db0ac27700804ba21b403de8f5ff34a1c1ecb0f292da341b098be30df2
+1Password,6600,,,.1password file,
+WPA/WPA2,2500,,,.hccap file,
+IKE-PSK MD5,5300,,,.ikemd5 file,
+IKE-PSK SHA1,5400,,,.ikesha1 file,
+Password Safe SHA-256,5200,,,.psafe3 file,
+TrueCrypt 5.0+ PBKDF2-HMAC-RipeMD160,621Y,,,.tc file,
+TrueCrypt 5.0+ PBKDF2-HMAC-SHA512,622Y,,,.tc file,
+TrueCrypt 5.0+ PBKDF2-HMAC-Whirlpool,623Y,,,.tc file,
+TrueCrypt 5.0+ PBKDF2-HMAC-RipeMD160 boot-mode,624Y,,,.tc file,
+TrueCrypt 5.0+,62XY,,,.tc file,
+SHA-256(Django),,,,sha256$Salt$Hash,sha256$Salt$7c0673382e8590bd52fddfcc0213f4c0dad75f2fb68af0daa199923e458474f6
+SHA-384(Django),,,,sha384$Salt$Hash,sha384$Salt$9a4ebc944ced14e9ffdabd9cd5ed8db37203d7bc81ea9f195f865a9dfd976ceb31da94e49404a27c72dd55ddc1b9b51e
+"Domain Cached Credentials, mscash",1100,,"hexadecimal (0-9, a-f, A-F)","Username:ComputerName:LM:NT Has at least 3 colons ':', sometimes 6 depending on output",user:500:aad3b435b51404eeaad3b435b51404ee:7d13db5cb2ade3acccf9564d8e251af3:::
