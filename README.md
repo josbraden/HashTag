@@ -26,6 +26,7 @@ One of the biggest aspects of this tool is the identification of password hashes
 
 HashTag.py {-sh hash |-f file |-d directory} [-o output_filename] [-hc] [-n]
 
+Option | Description
 --------------------------------------------|--------------------------------------------
 -h, --help | show this help message and exit
 -sh SINGLEHASH, --singleHash SINGLEHASH | Identify a single hash
