@@ -34,38 +34,119 @@ args = parser.parse_args()
 
 hashDict = dict()
 
-hashcatDict = { \
-'MD5': '0', 'md5($pass.$salt)': '10', 'Joomla': '11', 'md5($salt.$pass)': '20', 'osCommerce, xt:Commerce': '21', 'm\
-d5(unicode($pass).$salt)': '30', 'md5($salt.unicode($pass))': '40', 'HMAC-MD5 (key = $pass)': '50', 'HMAC-MD5 (key\
-= $salt)': '60', 'SHA1': '100', 'nsldap, SHA-1(Base64), Netscape LDAP SHA': '101', 'sha1($pass.$salt)': '110', 'nsl\
-daps, SSHA-1(Base64), Netscape LDAP SSHA': '111', 'Oracle 11g': '112', 'Oracle 11g, SHA-1(Oracle)': '112', 'sha1($s\
-alt.$pass)': '120', 'sha1(strtolower($username).$pass),  SMF >= v1.1': '121', 'OSX v10.4, v10.5, v10.6': '122', 's\
-ha1(unicode($pass).$salt)': '130', 'MSSQL(2000)': '131', 'MSSQL(2005)': '132', 'sha1($salt.unicode($pass))': '140',\
- 'EPiServer 6.x < v4': '141', 'HMAC-SHA1 (key = $pass)': '150', 'HMAC-SHA1 (key = $salt)': '160', 'sha1(LinkedIn)':\
- '190', 'MySQL': '200', 'MySQL4.1/MySQL5': '300', 'phpass, MD5(Wordpress), MD5(phpBB3)': '400', 'md5crypt, MD5(Unix\
-), FreeBSD MD5, Cisco-IOS MD5': '500', 'SHA-1(Django)': '800', 'MD4': '900', 'md4($pass.$salt)': '910', 'NTLM': '10\
-00', 'Domain Cached Credentials, mscash': '1100', 'SHA256': '1400', 'sha256($pass.$salt)': '1410', 'sha256($salt.$p\
-ass)': '1420', 'sha256(unicode($pass).$salt)': '1430', 'sha256($salt.unicode($pass))': '1440', 'EPiServer 6.x > v4'\
-: '1441', 'HMAC-SHA256 (key = $pass)': '1450', 'HMAC-SHA256 (key = $salt)': '1460', 'descrypt, DES(Unix), Tradition\
-al DES': '1500', 'md5apr1, MD5(APR), Apache MD5': '1600', 'SHA512': '1700', 'sha512($pass.$salt)': '1710', 'SSHA-51\
-2(Base64), LDAP {SSHA512}': '1711', 'sha512($salt.$pass)': '1720', 'OSX v10.7': '1722', 'sha512(unicode($pass).$sal\
-t)': '1730', 'MSSQL(2012)': '1731', 'sha512($salt.unicode($pass))': '1740', 'HMAC-SHA512 (key = $pass)': '1750', 'H\
-MAC-SHA512 (key = $salt)': '1760', 'sha512crypt, SHA512(Unix)': '1800', 'Domain Cached Credentials2, mscash2': '210\
-0', 'Cisco-PIX MD5': '2400', 'WPA/WPA2': '2500', 'Double MD5': '2600', 'md5(md5($pass))': '2600', 'vBulletin < v3.8\
-.5': '2611', 'vBulletin > v3.8.5': '2711', 'IPB2+, MyBB1.2+': '2811', 'LM': '3000', 'Oracle 7-10g, DES(Oracle)': '3\
-100', 'bcrypt, Blowfish(OpenBSD)': '3200', 'MD5(Sun)': '3300', 'md5(md5(md5($pass)))': '3500', 'md5(md5($salt).$pas\
-s)': '3610', 'md5($salt.md5($pass))': '3710', 'md5($pass.md5($salt))': '3720', 'WebEdition CMS': '3721', 'md5($salt\
-.$pass.$salt)': '3810', 'md5(md5($pass).md5($salt))': '3910', 'md5($salt.md5($salt.$pass))': '4010', 'md5($salt.md5\
-($pass.$salt))': '4110', 'md5($username.0.$pass)': '4210', 'md5(strtoupper(md5($pass)))': '4300', 'md5(sha1($pass))\
-': '4400', 'sha1(sha1($pass))': '4500', 'sha1(sha1(sha1($pass)))': '4600', 'sha1(md5($pass))': '4700', 'MD5(Chap)':\
- '4800', 'SHA-3(Keccak)': '5000', 'Half MD5': '5100', 'Password Safe SHA-256': '5200', 'IKE-PSK MD5': '5300', 'IKE-\
-PSK SHA1': '5400', 'NetNTLMv1-VANILLA / NetNTLMv1+ESS': '5500', 'NetNTLMv2': '5600', 'Cisco-IOS SHA256': '5700', 'S\
-amsung Android Password/PIN': '5800', 'RipeMD160': '6000', 'Whirlpool': '6100', 'TrueCrypt 5.0+ PBKDF2-HMAC-RipeMD1\
-60': '621Y', 'TrueCrypt 5.0+ PBKDF2-HMAC-SHA512': '622Y', 'TrueCrypt 5.0+ PBKDF2-HMAC-Whirlpool': '623Y', 'TrueCryp\
-t 5.0+ PBKDF2-HMAC-RipeMD160 boot-mode': '624Y', 'TrueCrypt 5.0+': '62XY', 'AIX {smd5}': '6300', 'AIX {ssha256}': '\
-6400', 'AIX {ssha512}': '6500', '1Password': '6600', 'AIX {ssha1}': '6700', 'Lastpass': '6800', 'GOST R 34.11-94':\
-'6900', 'Fortigate (FortiOS)': '7000', 'OSX v10.8': '7100', 'GRUB 2': '7200', 'IPMI2 RAKP HMAC-SHA1': '7300', 'sha2\
-56crypt, SHA256(Unix)': '7400'}
+hashcatDict = {
+    'MD5': '0',
+    'md5($pass.$salt)': '10',
+    'Joomla': '11',
+    'md5($salt.$pass)': '20',
+    'osCommerce, xt:Commerce': '21',
+    'md5(unicode($pass).$salt)': '30',
+    'md5($salt.unicode($pass))': '40',
+    'HMAC-MD5 (key = $pass)': '50',
+    'HMAC-MD5 (key= $salt)': '60',
+    'SHA1': '100',
+    'nsldap, SHA-1(Base64), Netscape LDAP SHA': '101',
+    'sha1($pass.$salt)': '110',
+    'nsldaps, SSHA-1(Base64), Netscape LDAP SSHA': '111',
+    'Oracle 11g': '112',
+    'Oracle 11g, SHA-1(Oracle)': '112',
+    'sha1($salt.$pass)': '120',
+    'sha1(strtolower($username).$pass),  SMF >= v1.1': '121',
+    'OSX v10.4, v10.5, v10.6': '122',
+    'sha1(unicode($pass).$salt)': '130',
+    'MSSQL(2000)': '131',
+    'MSSQL(2005)': '132',
+    'sha1($salt.unicode($pass))': '140', 'EPiServer 6.x < v4': '141',
+    'HMAC-SHA1 (key = $pass)': '150',
+    'HMAC-SHA1 (key = $salt)': '160',
+    'sha1(LinkedIn)': '190',
+    'MySQL': '200',
+    'MySQL4.1/MySQL5': '300',
+    'phpass, MD5(Wordpress), MD5(phpBB3)': '400',
+    'md5crypt, MD5(Unix), FreeBSD MD5, Cisco-IOS MD5': '500',
+    'SHA-1(Django)': '800',
+    'MD4': '900',
+    'md4($pass.$salt)': '910',
+    'NTLM': '1000',
+    'Domain Cached Credentials, mscash': '1100',
+    'SHA256': '1400',
+    'sha256($pass.$salt)': '1410',
+    'sha256($salt.$pass)': '1420',
+    'sha256(unicode($pass).$salt)': '1430',
+    'sha256($salt.unicode($pass))': '1440',
+    'EPiServer 6.x > v4': '1441',
+    'HMAC-SHA256 (key = $pass)': '1450',
+    'HMAC-SHA256 (key = $salt)': '1460',
+    'descrypt, DES(Unix), Traditional DES': '1500',
+    'md5apr1, MD5(APR), Apache MD5': '1600',
+    'SHA512': '1700',
+    'sha512($pass.$salt)': '1710',
+    'SSHA-512(Base64), LDAP {SSHA512}': '1711',
+    'sha512($salt.$pass)': '1720',
+    'OSX v10.7': '1722',
+    'sha512(unicode($pass).$salt)': '1730',
+    'MSSQL(2012)': '1731',
+    'sha512($salt.unicode($pass))': '1740',
+    'HMAC-SHA512 (key = $pass)': '1750',
+    'HMAC-SHA512 (key = $salt)': '1760',
+    'sha512crypt, SHA512(Unix)': '1800',
+    'Domain Cached Credentials2, mscash2': '2100',
+    'Cisco-PIX MD5': '2400',
+    'WPA/WPA2': '2500',
+    'Double MD5': '2600',
+    'md5(md5($pass))': '2600',
+    'vBulletin < v3.8.5': '2611',
+    'vBulletin > v3.8.5': '2711',
+    'IPB2+, MyBB1.2+': '2811',
+    'LM': '3000',
+    'Oracle 7-10g, DES(Oracle)': '3100',
+    'bcrypt, Blowfish(OpenBSD)': '3200',
+    'MD5(Sun)': '3300',
+    'md5(md5(md5($pass)))': '3500',
+    'md5(md5($salt).$pass)': '3610',
+    'md5($salt.md5($pass))': '3710',
+    'md5($pass.md5($salt))': '3720',
+    'WebEdition CMS': '3721',
+    'md5($salt.$pass.$salt)': '3810',
+    'md5(md5($pass).md5($salt))': '3910',
+    'md5($salt.md5($salt.$pass))': '4010',
+    'md5($salt.md5($pass.$salt))': '4110',
+    'md5($username.0.$pass)': '4210',
+    'md5(strtoupper(md5($pass)))': '4300',
+    'md5(sha1($pass))': '4400',
+    'sha1(sha1($pass))': '4500',
+    'sha1(sha1(sha1($pass)))': '4600',
+    'sha1(md5($pass))': '4700',
+    'MD5(Chap)': '4800',
+    'SHA-3(Keccak)': '5000',
+    'Half MD5': '5100',
+    'Password Safe SHA-256': '5200',
+    'IKE-PSK MD5': '5300',
+    'IKE-PSK SHA1': '5400',
+    'NetNTLMv1-VANILLA / NetNTLMv1+ESS': '5500',
+    'NetNTLMv2': '5600',
+    'Cisco-IOS SHA256': '5700',
+    'Samsung Android Password/PIN': '5800',
+    'RipeMD160': '6000',
+    'Whirlpool': '6100',
+    'TrueCrypt 5.0+ PBKDF2-HMAC-RipeMD160': '621Y',
+    'TrueCrypt 5.0+ PBKDF2-HMAC-SHA512': '622Y',
+    'TrueCrypt 5.0+ PBKDF2-HMAC-Whirlpool': '623Y',
+    'TrueCrypt 5.0+ PBKDF2-HMAC-RipeMD160 boot-mode': '624Y',
+    'TrueCrypt 5.0+': '62XY',
+    'AIX {smd5}': '6300',
+    'AIX {ssha256}': '6400',
+    'AIX {ssha512}': '6500',
+    '1Password': '6600',
+    'AIX {ssha1}': '6700',
+    'Lastpass': '6800',
+    'GOST R 34.11-94':'6900',
+    'Fortigate (FortiOS)': '7000',
+    'OSX v10.8': '7100',
+    'GRUB 2': '7200',
+    'IPMI2 RAKP HMAC-SHA1': '7300',
+    'sha256crypt, SHA256(Unix)': '7400'
+}
 
 #Check whether a string consists of only hexadecimal characters.
 def isHex(singleString):
